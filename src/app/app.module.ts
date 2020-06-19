@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AuthService } from './auth.service';
+import { BdService } from './bd.service';
+import { ProgressoService } from './progresso.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,7 +35,7 @@ import { IncluirPublicacaoComponent } from './home/incluir-publicacao/incluir-pu
     BrowserAnimationsModule,
     ReactiveFormsModule
   ],
-  providers: [AuthService, AuthGuardService],
+  providers: [AuthService, AuthGuardService, BdService, ProgressoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
