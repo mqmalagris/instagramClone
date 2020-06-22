@@ -28,9 +28,6 @@ export class PublicacoesComponent implements OnInit {
     this.bd.consultaPubs(this.email)
       .then((publicacoes: any) => {
         this.publicacoes = publicacoes;
-        console.log(publicacoes);
-
-
       })
   }
 
